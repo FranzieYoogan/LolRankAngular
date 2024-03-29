@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {
+
+    background: url('assets/background/sage.gif');
+    background-size: 100%;
+    background-position-y: 13%;
+    background-position-x: 0%;
+    font-family: pixel;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url('/assets/fonts/pixel.TTF');
+  }
+  
+  div {
+    font-family: pixel;
+  }
