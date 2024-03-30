@@ -11,7 +11,18 @@
 
     position: fixed;
     left: 16em;
-    top: 1.6em;
+    top: 0.8em;
+
+}
+
+.iconNavbar {
+
+    width: 45px !important;
+    position: relative !important;
+    height: 5px !important;
+    border: 2px solid green;
+    border-radius: 1000px !important;
+    margin-right: 0.5em;
 
 }
 
@@ -25,13 +36,23 @@
     
         position: fixed;
         left: 23em;
-        top: 1.6em;
+        top: 0.4em;
+  
+        
+      }
+      .iconNavbar {
+
+        width: 35px !important;
+        position: relative !important;
+        height: 15vh !important;
+        border: 2px solid green;
+        border-radius: 1000px !important;
+        margin-right: 0.5em;
+        
     
     }
     
-        
-      }
-
+    }
 
 
 .navbar-brand {
@@ -87,7 +108,12 @@ input:hover, input:active ~ ::placeholder, input:focus {
 
 .iconNavbar {
 
-    width: 60px;
+    width: 50px;
+    position: relative;
+    height: 8vh !important;
+    border: 2px solid green;
+    border-radius: 1000px !important;
+    margin-right: 0.5em;
 
 }
 
