@@ -25,7 +25,7 @@ export class SearchComponent {
     
     const search:any = document.getElementById('search');
 
-    var apiKey = "RGAPI-d58c8b9e-c429-4f59-b71d-f55e6ef6fec7"
+    var apiKey = "RGAPI-63f9b443-fed0-4614-bf0d-88dba45ed366"
     var summonerName:any = document.getElementById('summonerName')
     var tier:any = document.getElementById('tier')
     var rank:any = document.getElementById('rank')

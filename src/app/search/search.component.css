@@ -52,3 +52,21 @@ button:hover {
     color: #008000;
     box-shadow: 0.5px 0.5px 0.5px 0.5px white !important;
 }
+
+.video {
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -60;
+    bottom: 0em;
+    object-fit: cover;
+    position: fixed;
+
+}
+
+.containerContent {
+
+    width: 100% !important;
+
+}

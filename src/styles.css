@@ -3,10 +3,8 @@
 
 body {
 
-    background: url('assets/background/sage.gif');
-    background-size: 100%;
-    background-position-y: 13%;
-    background-position-x: 0%;
+
+  overflow: hidden;
     font-family: pixel;
 }
 
@@ -18,3 +16,5 @@ body {
   div {
     font-family: pixel;
   }
+
+  
