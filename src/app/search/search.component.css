@@ -5,6 +5,35 @@
 
 }
 
+@media only screen and (width: 400px) {
+
+.navbar-toggler {
+
+    position: fixed;
+    left: 16em;
+    top: 1.6em;
+
+}
+
+    
+  }
+
+
+  @media only screen and (width: 554px) {
+
+    .navbar-toggler {
+    
+        position: fixed;
+        left: 23em;
+        top: 1.6em;
+    
+    }
+    
+        
+      }
+
+
+
 .navbar-brand {
 
  

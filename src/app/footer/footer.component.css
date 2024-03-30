@@ -9,6 +9,70 @@
     
 }
 
+@media only screen and (width: 400px) {
+    .linkStyle {
+
+          
+           
+    }
+
+    .containerRito {
+
+     font-size: 10px !important;
+     bottom: 4em;
+           left: 8.5em;
+            position: absolute;
+    }
+
+    .containerContent {
+    
+        position: relative;
+     
+    
+    }
+
+    .linkStyle {
+        position: relative;
+        bottom: 0.5em !important;
+
+    }
+
+    .btn {
+
+
+        font-size: 9px;
+        position: relative;
+        left: 5em !important;
+    }
+
+  }
+
+  @media only screen and (width: 554px) {
+    .linkStyle {
+
+            font-size: 10px !important;
+            position: relative;
+            bottom: 0.5em;
+    }
+
+    .containerContent {
+        font-size: 10px !important;
+        position: relative;
+        bottom: -0.3em;
+        height: 10vh;
+    }
+    
+
+    .btn {
+
+        position: relative;
+        bottom: 0.3em;
+    }
+
+  }
+
+
+
 .btn {
 
     color: green; 
@@ -27,6 +91,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+.containerRito {
+
+    display: flex;
+
+
 }
 
 .linkStyle {
@@ -36,6 +108,9 @@
     border-right: 2px solid transparent; 
     padding: 5px;
     color: green;
+    position: relative;
+   bottom: 4px;
+   margin-left: 0.5em;
 }
 
 .linkStyle:hover {
