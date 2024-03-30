@@ -5,6 +5,23 @@
 
 }
 
+.navbar-brand {
+
+ 
+
+}
+
+.menuTitle  {
+    transition: 1s !important;
+
+}
+
+.navbar-brand:hover > .menuTitle {
+
+    color: #00ff00 !important;
+
+}
+
 .navbar {
 
     border-bottom: 2px solid #00ff00;
@@ -45,11 +62,18 @@ input:hover, input:active ~ ::placeholder, input:focus {
 
 }
 
+button {
+
+    margin-left: 1em;
+    position: relative;
+    border: 1px solid green !important;
+}
+
 button:hover {
 
-    border: 1px solid rgb(0, 255, 0);
+    border: 1px solid rgb(0, 255, 0) !important;
     background-color: transparent !important;
-    color: #008000;
+    color: #00ff00;
     box-shadow: 0.5px 0.5px 0.5px 0.5px white !important;
 }
 
