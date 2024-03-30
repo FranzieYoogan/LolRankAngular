@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { window } from 'rxjs';
 
@@ -10,10 +10,41 @@ import { window } from 'rxjs';
   templateUrl: './search.component.html',
   styleUrl: './search.component.css'
 })
-export class SearchComponent {
+export class SearchComponent implements OnInit {
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient ) {
     // This service can now make HTTP requests via `this.http`.
+  }
+
+  ngOnInit() {
+    var summonerName:any = document.getElementById('summonerName')
+    const search:any = document.getElementById('search');
+    var summonerName:any = document.getElementById('summonerName')
+    var tier:any = document.getElementById('tier')
+    var rank:any = document.getElementById('rank')
+    var wins:any = document.getElementById('wins')
+    var losses:any = document.getElementById('losses')
+    var winRate:any = document.getElementById('winRate')
+
+
+    search.addEventListener('input', function (e: { target: { value: any; }; }) {
+      if(e.target.value == "") {
+          search.value = ""
+        summonerName.innerHTML = ``
+        tier.innerHTML = ``
+        rank.innerHTML = ``
+        wins.innerHTML = ``
+        losses.innerHTML = ``
+        winRate.innerHTML = ``
+    
+        console.clear()
+
+
+      }
+
+    });
+
+
   }
 
 
@@ -22,7 +53,7 @@ export class SearchComponent {
   data2:any;
 
   getApi() {  
-    
+      event?.preventDefault()
     const search:any = document.getElementById('search');
 
     var apiKey = "RGAPI-63f9b443-fed0-4614-bf0d-88dba45ed366"
@@ -66,7 +97,7 @@ this.http.get(`https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/$
 
   setTimeout(() => {
     
-    if(search.value == "Loading") {
+    if(search.value == "Loading" || !this.data.id) {
    
 
       search.value = "ERROR"
@@ -87,6 +118,8 @@ this.http.get(`https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/$
 
 
   }, 8000);
+
+
 
 
 
@@ -122,12 +155,15 @@ this.http.get(`https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/$
       if(res2) {
 
         this.data2 = res2;
-        search.value = this.data2[0].summonerName;
+        
 
       }
 
 
+        if(this.data2) {
 
+
+          search.value = this.data2[0].summonerName;
    
         var totalGames:any = (this.data2[0].wins + this.data2[0].losses) * 100;
     
@@ -146,7 +182,7 @@ this.http.get(`https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/$
  
       
 
-
+      }
      
 
   

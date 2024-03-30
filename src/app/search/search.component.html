@@ -23,10 +23,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
  
 
-          <form  id="form" class="d-flex" role="search">
+          <form  (submit)="getApi()" id="form" class="d-flex" role="search" >
           <img src="" alt="">
-        <input class="form-control me-2" id="search" type="search" placeholder="Search" value="" aria-label="Search">
-        <button (click)="getApi()"  id="submit" form="form" class="btn btn-outline-success" type="button">Search</button>
+        <input class="form-control me-2" required maxlength="16" id="search" type="search" placeholder="Search" value="" aria-label="Search">
+   
+        <button  id="submit" form="form" class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
     
@@ -47,7 +48,7 @@
 
 <h1  id="error" style="display:none;">Enter A valid NickName</h1>
 
-  
+
 <h1 id="summonerName"></h1>
 
 <h1 id="tier"></h1>
