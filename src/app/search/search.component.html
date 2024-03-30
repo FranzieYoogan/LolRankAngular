@@ -8,7 +8,7 @@
 
   
   <div>
-        <a class="navbar-brand" href="#"><img class="iconNavbar" src="assets/icons/sage.jpg" alt=""> <span class="menuTitle">Valorant's Stats</span></a>
+        <a class="navbar-brand" href="/"><img class="iconNavbar" src="assets/icons/sage.jpg" alt=""> <span class="menuTitle">Valorant's Stats</span></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,9 +23,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
  
 
-          <form class="d-flex" role="search">
+          <form (submit)="getApi()" id="form" class="d-flex" role="search">
         <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
-        <button (click)="getApi()" class="btn btn-outline-success" type="button">Search</button>
+        <button  id="submit" form="form" class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
     
@@ -33,5 +33,21 @@
   </div>
 </nav>
 
+<h1  id="error">Enter A valid NickName</h1>
 
-<h1 id="value"></h1>
+
+<h1 id="summonerName"></h1>
+
+<h1 id="tier"></h1>
+
+<h1 id="rank"></h1>
+
+<h1 id="wins"></h1>
+
+<h1 id="losses"></h1>
+
+<h1 id="winRate"></h1>
+
+
+
+
