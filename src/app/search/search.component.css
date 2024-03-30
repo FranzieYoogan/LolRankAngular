@@ -70,3 +70,13 @@ button:hover {
     width: 100% !important;
 
 }
+
+.footerStyle {
+
+    position: absolute;
+
+    bottom:0 !important;
+    width:100%;
+
+}
+

@@ -1,0 +1,46 @@
+.footerStyle {
+
+    position: absolute;
+
+    bottom:0 !important;
+    width:100%;
+        background-color: black !important;
+        border-top: 3px solid rgb(0, 255, 0);
+    
+}
+
+.btn {
+
+    color: green; 
+    text-shadow: none;
+}
+
+.btn:hover {
+
+    color: rgb(0, 255, 0); 
+
+}
+
+.containerContent {
+    color: green;
+    text-shadow: 2px 2px 2px white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkStyle {
+
+    transition: 1s;
+    border-left: 2px solid transparent; 
+    border-right: 2px solid transparent; 
+    padding: 5px;
+    color: green;
+}
+
+.linkStyle:hover {
+    color: rgb(0, 255, 0) !important;
+    border-left: 2px solid rgb(0, 255, 0) !important; 
+    border-right: 2px solid rgb(0, 255, 0) !important; 
+    padding: 5px;
+}

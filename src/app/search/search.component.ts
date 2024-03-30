@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { window } from 'rxjs';
+import { FooterComponent } from '../footer/footer.component';
 
 
 @Component({
   selector: 'app-search',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, FooterComponent],
   templateUrl: './search.component.html',
   styleUrl: './search.component.css'
 })
@@ -16,10 +17,9 @@ export class SearchComponent implements OnInit {
     // This service can now make HTTP requests via `this.http`.
   }
 
-  ngOnInit() {
+  ngOnInit():void {
     var summonerName:any = document.getElementById('summonerName')
-    const search:any = document.getElementById('search');
-    var summonerName:any = document.getElementById('summonerName')
+    var search:any = document.getElementById('search');
     var tier:any = document.getElementById('tier')
     var rank:any = document.getElementById('rank')
     var wins:any = document.getElementById('wins')
