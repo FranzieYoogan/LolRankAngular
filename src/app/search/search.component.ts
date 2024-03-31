@@ -45,6 +45,38 @@ export class SearchComponent implements OnInit {
     });
 
 
+    search.addEventListener('input', function(e: { target: { value: string; }; }) {
+
+      if (e.target.value != "") {
+
+       search.classList.add('changeInputColor')
+
+      }
+
+    })
+
+    search.addEventListener('focus', function () {
+      
+        search.classList.add('changePlaceholder')
+
+    })
+
+
+ 
+
+  search.addEventListener('mouseover', function () {
+      
+    search.classList.add('changePlaceholder')
+
+})
+
+search.addEventListener('mouseout', function () {
+      
+  search.classList.remove('changePlaceholder')
+
+})
+
+
   }
 
 

@@ -61,6 +61,17 @@
 
 }
 
+.changePlaceholder::placeholder {
+    color: #00ff00 !important;
+
+}
+
+.changeInputColor {
+    color: #00ff00 !important;
+
+
+}
+
 .menuTitle  {
     transition: 1s !important;
 
